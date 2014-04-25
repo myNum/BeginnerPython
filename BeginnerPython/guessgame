@@ -1,13 +1,13 @@
 highest = 10
 answer = 4
-guess = input("Guess a number between 0 - %d: " %highest)
+guess = input("Guess a number between 0 - %d: " % highest)
 
-while (int(guess) != answer):
-	if (int(guess) < answer):
-		print("Your guess is too low!")
+while guess != answer:
+	if  guess < answer:
+		print "Your guess is too low!"
 	else:
-		print("Your guess it to high!")
-
-	guess = input("Guess a number between 0 - %d: " %highest)
-
-print("YOU WIN! WOOP WOOP!")
+		print "Your guess is too high!"
+		
+	guess = input("Guess a number between 0 - %d: " % highest)
+	
+print "YOU WIN! WOOP WOOP!"
