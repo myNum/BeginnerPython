@@ -1,5 +1,7 @@
+from random import randint
+
 highest = 10
-answer = 4
+answer = randint(0,highest)
 guess = input("Guess a number between 0 - %d: " %highest)
 
 while (int(guess) != answer):
